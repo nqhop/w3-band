@@ -1,0 +1,302 @@
+/* reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li{
+    display: inline-block;
+    padding: 0px 24px;
+    position: relative;
+    line-height: 46px;
+}
+
+#nav > li{
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+}
+
+#nav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+#nav li:hover a{
+    color: #000;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#nav .subnav li{
+    width: 100%;
+    padding: 0px 12px;
+    min-width: 160px;
+}
+
+#nav .subnav a{
+    color: #000;
+}
+
+#header .search-btn{
+    float: right;
+}
+
+#header .search-btn:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+
+    /* background-image: url(/assets/img/slider/slider1.jpg);
+    background-repeat: no-repeat;
+    background-position:0 0;
+    background-size: contain; */
+
+    background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 48px;
+    color: white;
+    left: 50%;
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    font-size: 15px;
+    padding-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .members-list{
+    padding: 47px 0;
+    /* display: flex; */
+}
+
+#content .member-item{
+    text-align: center;
+    width: 33.33333%;
+    float: left;
+    
+}
+
+#content .member-img{
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 150px;
+    border-radius: 4px;
+}
+
+/* Tour section */
+
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    margin-top: 40px;
+    background-color: #fff;
+    list-style: none;
+}
+
+.tickets-list li{
+    color: #757575;
+    padding: 11px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity{
+    line-height: 24px;
+    text-align: center;
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    margin-top: -3px;
+    
+}
+
+/* Places */
+
+.places-list {
+    /* margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px; */
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 550;;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Footer section */
+
+#footer{
+
+}
+
