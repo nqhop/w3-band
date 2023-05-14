@@ -9,12 +9,36 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* common */
 .clear{
     clear: both;
 }
 
 .text-white{
     color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-haft {
+    width: 50%;
 }
 
 #main{
@@ -175,12 +199,11 @@ html{
     /* display: flex; */
 }
 
-#content .member-item{
-    text-align: center;
+/* #content .member-item{
     width: 33.33333%;
     float: left;
-    
-}
+    text-align: center;
+} */
 
 #content .member-img{
 }
@@ -240,15 +263,19 @@ html{
     /* margin-top: 32px;
     margin-left: -8px;
     margin-right: -8px; */
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
+
+    /* không cần margin left and right vì đã dùng row layout */
+    /* margin: 32px -8px 48px; */
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
-.place-item {
-    float: left;
+/* used column layout, so don't need this code   */
+/* .place-item {
     width: 33.33333%;
+    float: left;
     padding: 0 8px;
-}
+} */
 
 .place-img {
     width: 100%;
