@@ -112,7 +112,7 @@
                                 <div class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <button class="js-buy-ticket place-buy-btn">Buy Tickets</button>
+                                <button class="js-buy-ticket btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -124,7 +124,7 @@
                                 <div class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <button class="js-buy-ticket place-buy-btn">Buy Tickets</button>
+                                <button class="js-buy-ticket btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -136,7 +136,7 @@
                                 <div class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <button class="js-buy-ticket place-buy-btn">Buy Tickets</button>
+                                <button class="js-buy-ticket btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -172,14 +172,31 @@
                                 </div>
                             </div>
 
-                            <input class="mt-16 form-submit-btn" type="submit" value="SEND">
+                            <input class="mt-16 btn pull-right" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
             </div>
+            <!-- end contact section -->
+
+            <div class="map-section">
+                <img src="assets/img/map.jpg" alt="MAP">
+            </div>
         </div>
 
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="socials-list">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-twitter"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+                <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+            <div class="copyright">
+                <p>Powered by <a href="#">w3.css</a></p>
+            </div>
+        </div>
     </div>
 
     <div class="modal js-modal">
@@ -222,22 +239,22 @@
         const modalContainer = document.querySelector('.js-modal-container')
         const modalClose = document.querySelector('.js-model-close')
 
-        function showBuyTickets(){
+        function showBuyTickets() {
             modal.classList.add('open')
         }
 
-        function hideBuyTickets(){
+        function hideBuyTickets() {
             modal.classList.remove('open')
         }
 
-        for(const buyBtn of buyBtns){
+        for (const buyBtn of buyBtns) {
             buyBtn.addEventListener('click', showBuyTickets)
         }
 
         modalClose.addEventListener('click', hideBuyTickets)
 
         modal.addEventListener('click', hideBuyTickets)
-        modalContainer.addEventListener('click', function(event) {
+        modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
     </script>

@@ -22,6 +22,26 @@ html{
     text-align: center !important;
 }
 
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right !important;
+}
+
 .mt-8 {
     margin-top: 8px;
 }
@@ -324,20 +344,6 @@ html{
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    display: inline-block;
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    margin-top: 15px;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
 /* contact section */
 .contact-content {
     margin-top: 48px;
@@ -364,18 +370,41 @@ html{
     outline: none;
 }
 
-.contact-form .form-submit-btn{
-    float: right;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 11px 17px;
+/* Map section */
+
+.map-section img {
+    width: 100%;
 }
+
 /* Footer section */
 
 #footer{
-
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a,
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
 
 .modal {
     position: fixed;
